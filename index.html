@@ -1,520 +1,451 @@
-﻿<!doctype html>
-<html>
+<!DOCTYPE html>
 
 <head>
-<title>导航</title>
-<base target="_blank" />
-<style type="text/css">
-.block {
-float:left;
-height:300px;
-width:200px;
-margin:20px;
-border-radius: 6px;
-background-color: #FAFAFA;
-}
-.block ul {
-list-style:none;
-margin:0px;
-}
-.block li:hover{
-background-color: #F2F2F2;
-}
-.block a{
-list-style:none;
-margin:0px;
-text-decoration: NONE;
-color: #000000;
-.hover
-}
-.block a:hover{
-
-}
-.block a:visited{
-color: #000000;
-}
-</style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main_min.css">
+    <title> Welcome back Master </title>
 </head>
 
+
 <body>
-<div class="block">
-<ul>
-<li>
-社区
-</li>
-<li>
-<a href="http://www.v2ex.com">V2EX</a>
-</li>
-<li>
-<a href="http://www.stackoverflow.com">Stack Oveerflow</a>
-</li>
-<li>
-<a href="http://www.segmentfault.com">SegmentFault</a>
-</li>
-<li>
-<a href="http://www.open-open.com/lib/">OPEN经验</a>
-</li>
-<li>
-<a href="http://www.segmentfault.com">ImportNews</a>
-</li>
-<li>
-<a href="http://www.segmentfault.com">InfoQ</a>
-</li>
-</ul>
-</div>
+    <div class="container">
+        <!-- <div class="search">
+            <input class="search-box" type="textbox" placeholder="Welcome back Master" autofocus>
+            <div class="search-clear">×</div>
+        </div> -->
+
+        <!-- <div class="clock">
+            <div class="time">00:00</div>
+            <div class="date">Mon, 12 Sep </div>
+        </div> -->
+        <div class="calendar-modal">
+            <div class="calendar-container">
+                <div id="close-calendar" class="close-modal"> &times; </div>
+                <div class="cal-buttons-container">
+                    <div class='cal-prev cal-button'>
+                        <div class="cal-arrow-left">
+                            <svg height="5.6442mm" viewBox="0 0 11.268826 19.999077" width="3.1803mm">
+                                <image height="96" width="104" y="3.9289" x="-327.18" preserveAspectRatio="none" />
+                                <path style="stroke-linejoin:round;stroke:#fff;stroke-linecap:round;stroke-width:3;fill:none" d="m-19.338 19.34-13.278-12.941 13.246-12.941"
+                                />
+                                <path style="stroke-linejoin:round;stroke:#fff;stroke-linecap:round;stroke-width:3;fill:none" d="m9.7539 18.484-8.2541-8.4845 8.2342-8.4841"
+                                />
+                            </svg>
+                        </div>
+
+                    </div>
+                    <div class="cal-month-name">September</div>
+                    <div class='cal-next cal-button'>
+                        <div class="cal-arrow-right">
+                            <svg height="5.6442mm" viewBox="0 0 11.268827 19.999075" width="3.1803mm">
+                                <image height="96" width="104" y="3.9289" x="-327.18" preserveAspectRatio="none" />
+                                <path style="stroke-linejoin:round;stroke:#fff;stroke-linecap:round;stroke-width:3;fill:none" d="m-19.338 19.34-13.278-12.941 13.246-12.941"
+                                />
+                                <path style="stroke-linejoin:round;stroke:#fff;stroke-linecap:round;stroke-width:3;fill:none" d="m1.5149 18.484 8.2541-8.4845-8.2342-8.4841"
+                                />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="cal-day-titles">
+                    <h3>Mon</h3>
+                    <h3>Tue</h3>
+                    <h3>Wed</h3>
+                    <h3>Thu</h3>
+                    <h3>Fri</h3>
+                    <h3>Sat</h3>
+                    <h3>Sun</h3>
+                </div>
+                <div class='cal-weeks'>
+                    <!-- template -->
+                    <!-- <div class="cal-week">
+                        <div class="day">1</div>
+                        <div class="day">2</div>
+                        <div class="day">3</div>
+                        <div class="day">4</div>
+                        <div class="day">5</div>
+                        <div class="day">6</div>
+                        <div class="day">7</div>
+                    </div> -->
+                </div>
+                <div class='time-left'></div>
+            </div>
+        </div>
+        <div class="overlay"></div>
+    </div>
+
+    <div class="outer-slides-container">
+        <div class="buttons-container"></div>
 
 
-<div class="block">
-<ul>
-<li>
-博客
-</li>
-<li>
-<a href="http://stormzhang.com/">stormzhang</a>
-</li>
-<li>
-<a href="http://ticktick.blog.51cto.com/">卢俊</a>
-</li>
-<li>
-<a href="http://www.cnblogs.com/Jax/">包建强</a>
-</li>
-<li>
-<a href="http://www.liaohuqiu.net/cn/">廖祜秋</a>
-</li>
-<li>
-<a href="http://blog.csdn.net/singwhatiwanna">任玉刚</a>
-</li>
-<li>
-<a href="http://blog.csdn.net/bboyfeiyu">何红辉</a>
-</li>
+        <div class="arrow left-arrow">
+            <svg id="svg2" height="50px" width="50px" viewBox="0 0 50 50">
+                <g id="layer1" transform="translate(-132.69 -56.215)">
+                    <path id="path4152" style="stroke-linejoin:round;stroke-width:3;color:#fff;stroke:#fff;stroke-linecap:round;fill:none" d="m160.47 93.613-13.278-12.941 13.246-12.941"
+                    />
+                </g>
+            </svg>
+        </div>
 
-<li>
-<a href="http://blog.zhaiyifan.cn/">宅一番</a>
-</li>
-<li>
-<a href="https://drakeet.me/">drakeet</a>
-</li>
-</ul>
-</div>
+        <div class="arrow right-arrow">
+            <svg id="svg2" height="50px" width="50px" viewBox="0 0 50 50">
+                <g id="layer1" transform="translate(-140.69 -56.215)">
+                    <path id="path4152" style="stroke-linejoin:round;stroke-width:3;color:#fff;stroke:#fff;stroke-linecap:round;fill:none" d="m147.2 93.613 13.278-12.941-13.246-12.941"
+                    />
+                </g>
+            </svg>
+        </div>
 
 
-<div class="block">
-<ul>
-<li>
-添加
-</li>
-<li>
-<a href="http://www.jcodecraeer.com/">泡在网上的日子</a>
-</li>
-<li>
-<a href="http://www.codekk.com">codekk</a>
-</li>
-<li>
-<a href="http://www.trinea.cn/">Trinea</a>
-</li>
-<li>
-<a href="http://www.vmatianyu.cn">Liter's Blog</a>
-</li>
-<li>
-<a href="http://www.barretlee.com/entry/"> 小胡子哥</a>
-</li>
-<li>
-<a href="http://www.baidu.com"> </a>
-</li>
-</ul>
-</div>
+        <div class="slides-container">
+
+            <div class="slide" name="安卓">
+                <div class="part">
+                    <h1> Group 1 </h1>
+
+                    <div class="links">
+                        <a href='#'> Link 1 </a>
+                        <a href='#'> Link 2 </a>
+                        <a href='#'> Link 3 </a>
+                        <a href='#'> Link 4 </a>
+                        <a href='#'> Link 5 </a>
+                        <a href='#'> Link 6 </a>
+                    </div>
+                </div>
+
+                <div class="part">
+                    <h1> Group 2 </h1>
+
+                    <div class="links">
+                        <a href='#'> Link 1 </a>
+                        <a href='#'> Link 2 </a>
+                        <a href='#'> Link 3 </a>
+                        <a href='#'> Link 4 </a>
+                        <a href='#'> Link 5 </a>
+                        <a href='#'> Link 6 </a>
+                    </div>
+                </div>
+
+                <div class="part">
+                    <h1> Group 3 </h1>
+
+                    <div class="links">
+                        <a href='#'> Link 1 </a>
+                        <a href='#'> Link 2 </a>
+                        <a href='#'> Link 3 </a>
+                        <a href='#'> Link 4 </a>
+                        <a href='#'> Link 5 </a>
+                        <a href='#'> Link 6 </a>
+                    </div>
+                </div>
+                <div class="part">
+                    <h1> Group 4 </h1>
+
+                    <div class="links">
+                        <a href='#'> Link 1 </a>
+                        <a href='#'> Link 2 </a>
+                        <a href='#'> Link 3 </a>
+                        <a href='#'> Link 4 </a>
+                        <a href='#'> Link 5 </a>
+                        <a href='#'> Link 6 </a>
+                    </div>
+                </div>
+                <div class="part">
+                    <h1> Group 5 </h1>
+
+                    <div class="links">
+                        <a href='#'> Link 1 </a>
+                        <a href='#'> Link 2 </a>
+                        <a href='#'> Link 3 </a>
+                        <a href='#'> Link 4 </a>
+                        <a href='#'> Link 5 </a>
+                        <a href='#'> Link 6 </a>
+                    </div>
+                </div>
+                <div class="part">
+                    <h1> Group 6 </h1>
+
+                    <div class="links">
+                        <a href='#'> Link 1 </a>
+                        <a href='#'> Link 2 </a>
+                        <a href='#'> Link 3 </a>
+                        <a href='#'> Link 4 </a>
+                        <a href='#'> Link 5 </a>
+                        <a href='#'> Link 6 </a>
+                    </div>
+                </div>
+            </div>
 
 
-<div class="block">
-<ul>
-<li>
-添加
-</li>
-<li>
-<a href="http://www.bbc.co.uk/learningenglish/english/features/6-minute-english/">6 Minute English</a>
-</li>
-<li>
-<a href="https://www.scientificamerican.com/podcast/60-second-science/"> 60-Second Science </a>
-</li>
-<li>
-<a href="https://indianapublicmedia.org/amomentofscience/">Moment of Science</a>
-</li>
-<li>
-<a href="https://edition.cnn.com/cnn10">CNN 10</a>
-</li>
-<li>
-<a href="http://www.baidu.com"> </a>
-</li>
-<li>
-<a href="http://www.baidu.com"> </a>
-</li>
-<li>
-<a href="http://www.baidu.com"> </a>
-</li>
-</ul>
-</div>
+            <div class="slide" name="前端">
+                <div class="part">
+                    <h1> Group a </h1>
+
+                    <div class="links">
+                        <a href='#'> Link 1 </a>
+                        <a href='#'> Link 2 </a>
+                        <a href='#'> Link 3 </a>
+                        <a href='#'> Link 4 </a>
+                        <a href='#'> Link 5 </a>
+                        <a href='#'> Link 6 </a>
+                    </div>
+                </div>
+
+                <div class="part">
+                    <h1> Group b </h1>
+
+                    <div class="links">
+                        <a href='#'> Link 1 </a>
+                        <a href='#'> Link 2 </a>
+                        <a href='#'> Link 3 </a>
+                        <a href='#'> Link 4 </a>
+                        <a href='#'> Link 5 </a>
+                        <a href='#'> Link 6 </a>
+                    </div>
+                </div>
+                <div class="part">
+                    <h1> Group c </h1>
+
+                    <div class="links">
+                        <a href='#'> Link 1 </a>
+                        <a href='#'> Link 2 </a>
+                        <a href='#'> Link 3 </a>
+                        <a href='#'> Link 4 </a>
+                        <a href='#'> Link 5 </a>
+                        <a href='#'> Link 6 </a>
+                    </div>
+                </div>
 
 
-<div class="block">
-<ul>
-<li>
-添加
-</li>
-<li>
-<a href="https://developer.android.google.cn/guide/index.html">API Guide</a>
-</li>
-<li>
-<a href="http://androidweekly.net/"> Android Weekly</a>
-</li>
-<li>
-<a href="https://material.io/">Material Design</a>
-</li>
-<li>
-<a href="https://icons8.com">Icons8</a>
-</li>
-</ul>
-</div>
+                <div class="part">
+                    <h1> Group x </h1>
+
+                    <div class="links">
+                        <a href='#'> Link 1 </a>
+                        <a href='#'> Link 2 </a>
+                        <a href='#'> Link 3 </a>
+                        <a href='#'> Link 4 </a>
+                        <a href='#'> Link 5 </a>
+                        <a href='#'> Link 6 </a>
+                    </div>
+                </div>
+
+                <div class="part">
+                    <h1> Group y </h1>
+
+                    <div class="links">
+                        <a href='#'> Link 1 </a>
+                        <a href='#'> Link 2 </a>
+                        <a href='#'> Link 3 </a>
+                        <a href='#'> Link 4 </a>
+                        <a href='#'> Link 5 </a>
+                        <a href='#'> Link 6 </a>
+                    </div>
+                </div>
+
+                <div class="part">
+                    <h1> Group z </h1>
+
+                    <div class="links">
+                        <a href='#'> Link 1 </a>
+                        <a href='#'> Link 2 </a>
+                        <a href='#'> Link 3 </a>
+                        <a href='#'> Link 4 </a>
+                        <a href='#'> Link 5 </a>
+                        <a href='#'> Link 6 </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide" name="设计">
+                <div class="part">
+                    <h1> Group 3.1 </h1>
+
+                    <div class="links">
+                        <a href='#'> Link 1 </a>
+                        <a href='#'> Link 2 </a>
+                        <a href='#'> Link 3 </a>
+                        <a href='#'> Link 4 </a>
+                        <a href='#'> Link 5 </a>
+                        <a href='#'> Link 6 </a>
+                    </div>
+                </div>
+
+                <div class="part">
+                    <h1> Group 3.2 </h1>
+
+                    <div class="links">
+                        <a href='#'> Link 1 </a>
+                        <a href='#'> Link 2 </a>
+                        <a href='#'> Link 3 </a>
+                        <a href='#'> Link 4 </a>
+                        <a href='#'> Link 5 </a>
+                        <a href='#'> Link 6 </a>
+                    </div>
+                </div>
+
+                <div class="part">
+                    <h1> Group 3.3 </h1>
+
+                    <div class="links">
+                        <a href='#'> Link 1 </a>
+                        <a href='#'> Link 2 </a>
+                        <a href='#'> Link 3 </a>
+                        <a href='#'> Link 4 </a>
+                        <a href='#'> Link 5 </a>
+                        <a href='#'> Link 6 </a>
+                    </div>
+                </div>
+
+                <div class="part">
+                    <h1> Group 3.4 </h1>
+
+                    <div class="links">
+                        <a href='#'> Link 1 </a>
+                        <a href='#'> Link 2 </a>
+                        <a href='#'> Link 3 </a>
+                        <a href='#'> Link 4 </a>
+                        <a href='#'> Link 5 </a>
+                        <a href='#'> Link 6 </a>
+                    </div>
+                </div>
+
+                <div class="part">
+                    <h1> Group 3.5 </h1>
+
+                    <div class="links">
+                        <a href='#'> Link 1 </a>
+                        <a href='#'> Link 2 </a>
+                        <a href='#'> Link 3 </a>
+                        <a href='#'> Link 4 </a>
+                        <a href='#'> Link 5 </a>
+                        <a href='#'> Link 6 </a>
+                    </div>
+                </div>
 
 
-<div class="block">
-<ul>
-<li>
-购物
-</li>
-<li>
-<a href="http://www.taobao.com">淘宝</a>
-</li>
-<li>
-<a href="http://www.jd.com">京东</a>
-</li>
-<li>
-<a href="http://www.dangdang.com">当当</a>
-</li>
-<li>
-<a href="http://www.kongfz.com">孔夫子旧书网</a>
-</li>
-</ul>
-</div>
+                <div class="part">
+                    <h1> Group 3.6 </h1>
+
+                    <div class="links">
+                        <a href='#'> Link 1 </a>
+                        <a href='#'> Link 2 </a>
+                        <a href='#'> Link 3 </a>
+                        <a href='#'> Link 4 </a>
+                        <a href='#'> Link 5 </a>
+                        <a href='#'> Link 6 </a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
-<div class="block">
-<ul>
-<li>
-AV
-</li>
-<li>
-<a href="http://www.duga.jp">DUGA</a>
-</li>
-<li>
-<a href="http://www.dmm.co.jp">DMM</a>
-</li>
-<li>
-<a href="http://www.arzon.jp">ARZON</a>
-</li>
-<li>
-<a href="http://www.at-mania.com">AT-MANIA</a>
-</li>
-<li>
-<a href="http://www.btkiss.com">BTkiss</a>
-</li>
-<li>
-<a href="http://www.btku.com">BTku</a>
-</li>
-<li>
-<a href="http://feikebt.com">飞客BT</a>
-</li>
-<li>
-<a href="http://www.javpop.com">JavPOP</a>
-</li>
-<li>
-<a href="http://www.javlibrary">JAVLibrary</a>
-</li>
-<li>
-<a href="http://www.avupload">AVupload</a>
-</li>
-<li>
-<a href="https://seesaawiki.jp/av_neme/">AV Wiki</a>
-</li>
-</ul>
-</div>
+        <!-- NOTES-->
+        <!-- button is added via notes.js file -->
+        <!-- TODO: change row in css file -->
+
+        <div class="notes-modal">
+            <div class="close-modal" id="notes-close-modal"> &times; </div>
+
+            <div class="notes-container">
+                <div class="row">
+
+                    <div class="half">
+                        <h2> Todo </h2>
+                        <div class="row margin-v-10">
+                            <input type="text" class="todo-input" id="todo-input" placeholder="Add task"></input>
+                            <button style="margin: 0" class="button" id="add-task-btn"> Add </button>
+                        </div>
+                        <div class="row margin-b-20">
+                            <span id="todo-input-msg" class="input-error"> <!-- error message goes here --></span>
+                        </div>
+                    </div>
+
+                    <div class="half">
+                        <h2> Filter </h2>
+                        <div class="row row-wrap margin-v-10">
+                            <button id="task-filter-all" class="button button-active margin-v-0"> All </button>
+                            <button id="task-filter-todo" class="button margin-v-0"> Todo </button>
+                            <button id="task-filter-done" class="button margin-v-0"> Completed </button>
+                            <button id="task-clear-done" class="button margin-v-0"> Clear finished </button>
+                        </div>
+                    </div>
+                </div>
 
 
-<div class="block">
-<ul>
-<li>
-阅读
-</li>
-<li>
-<a href="http://gen.lib.rus.ec/">Library Genesis</a>
-</li>
-<li>
-<a href="http://book.douban.com">豆瓣读书</a>
-</li>
-<li>
-<a href="http://www.neikuw.com">内酷网</a>
-</li>
-<li>
-<a href="http://www.pdfzj.com">杂志之家</a>
-</li>
-<li>
-<a href="http://www.wowenda.com">百度云搜索</a>
-</li>
-<li>
-<a href="http://www.chuansong.me">微信传送门</a>
-</li>
-<li>
-<a href="http://www.torlock.com">TORLOCK</a>
-</li>
-</ul>
-</div>
+                <div class="row">
+                    <h3 class="todo-items-counter">
+                        <span id="todo-done">1</span> / <span id="todo-items">10</span>
+                    </h3>
+
+                    <button class="button btn-save-tasks"> Save tasks </button>
+                </div>
 
 
+                <div class="notes-todo-list"></div>
+                <!-- example of task
+                        <div class="row">
+                            <input type="checkbox" class="strikethrough" id="bla bla"></input>
+                            <label for="bla bla"> Bla bla </label>
+                            <button class="button todo-btn todo-edit"> Edit </button>
+                            <button class="button todo-btn todo-delete"> Delete </button>
+                        </div>
+                        end of example -->
 
-<div class="block">
-<ul>
-<li>
-爱好
-</li>
-<li>
-<a href="http://bbs.mydigit.cn">数码之家</a>
-</li>
-<li>
-<a href="http://www.geek-workshop.com">极客工坊</a>
-</li>
-</ul>
-</div>
+                <!-- edit modal -->
+                <div class="modal" id="todo-edit-modal">
+                    <div class="close-modal" id="todo-edit-modal-close">&times;</div>
 
+                    <div class="row">
+                        <input type="text" id="todo-edit-input" class="todo-input" />
+                    </div>
 
-<div class="block">
-<ul>
-<li>
-外包
-</li>
-<li>
-<a href="https://zb.oschina.net/">开源中国众包</a>
-</li>
-<li>
-<a href="http://www.taskcity.com/">智城</a>
-</li>
-<li>
-<a href="http://www.zbj.com/">猪八戒</a>
-</li>
-<li>
-<a href="http://www.baidu.com"> </a>
-</li>
-</ul>
-</div>
+                    <div class="row margin-b-20">
+                        <span id="todo-edit-error" class="input-error"><!-- error message goes here --></span>
+                    </div>
+
+                    <div class="row center">
+                        <button id="todo-modal-cancel" class="button"> Cancel </button>
+                        <button id="todo-modal-save" class="button"> Save </button>
+                    </div>
+                </div>
+                <div class="overlay" id="todo-overlay"></div>
+
+            </div>
+        </div>
 
 
-<div class="block">
-<ul>
-<li>
-添加
-</li>
-<li>
-<a href="http://hustlzp.com/">西窗烛刘志鹏</a>
-</li>
-<li>
-<a href="http://www.baidu.com"> </a>
-</li>
-<li>
-<a href="http://www.baidu.com"> </a>
-</li>
-<li>
-<a href="http://www.baidu.com"> </a>
-</li>
-</ul>
-</div>
+        <!-- script for clock, calendar, slide transitions -->
+        <script src="js/clock.js"></script>
 
+        <!-- script for custom countdown shown into calendar modal -->
+        <script src="js/countdown.js"></script>
 
-<div class="block">
-<ul>
-<li>
-添加
-</li>
-<li>
-<a href="https://time.geekbang.org/">极客时间</a>
-</li>
-<li>
-<a href="https://study.163.com/">网易云课堂</a>
-</li>
-<li>
-<a href="https://ke.qq.com/">腾讯课堂</a>
-</li>
-<li>
-<a href="http://www.baidu.com"> </a>
-</li>
-</ul>
-</div>
+        <!-- script for generating calendar -->
+        <script src="js/calendar.js"></script>
 
+        <!-- script for handling search -->
+        <script src="js/search-box.js"></script>
 
-<div class="block">
-<ul>
-<li>
-添加
-</li>
-<li>
-<a href="https://www.easyicon.net/">EasyIcon</a>
-</li>
-<li>
-<a href="http://www.baidu.com"> </a>
-</li>
-<li>
-<a href="http://www.baidu.com"> </a>
-</li>
-<li>
-<a href="http://www.baidu.com"> </a>
-</li>
-</ul>
-</div>
+        <!-- animating slides animations -->
+        <script src="js/slides.js"></script>
 
+        <!-- script for handling todo items -> notes -->
+        <script src="js/notes.js"></script>
 
-<div class="block">
-<ul>
-<li>
-添加
-</li>
-<li>
-<a href="http://www.baidu.com"> </a>
-</li>
-<li>
-<a href="http://www.baidu.com"> </a>
-</li>
-<li>
-<a href="http://www.baidu.com"> </a>
-</li>
-<li>
-<a href="http://www.baidu.com"> </a>
-</li>
-</ul>
-</div>
+        <script>
+            // show clock and date under it
+            showClock();
 
-
-<div class="block">
-<ul>
-<li>
-添加
-</li>
-<li>
-<a href="http://www.baidu.com"> </a>
-</li>
-<li>
-<a href="http://www.baidu.com"> </a>
-</li>
-<li>
-<a href="http://www.baidu.com"> </a>
-</li>
-<li>
-<a href="http://www.baidu.com"> </a>
-</li>
-</ul>
-</div>
-
-
-<div class="block">
-<ul>
-<li>
-添加
-</li>
-<li>
-<a href="http://www.baidu.com"> </a>
-</li>
-<li>
-<a href="http://www.baidu.com"> </a>
-</li>
-<li>
-<a href="http://www.baidu.com"> </a>
-</li>
-<li>
-<a href="http://www.baidu.com"> </a>
-</li>
-</ul>
-</div>
-
-
-<div class="block">
-<ul>
-<li>
-添加
-</li>
-<li>
-<a href="http://www.baidu.com"> </a>
-</li>
-<li>
-<a href="http://www.baidu.com"> </a>
-</li>
-<li>
-<a href="http://www.baidu.com"> </a>
-</li>
-<li>
-<a href="http://www.baidu.com"> </a>
-</li>
-</ul>
-</div>
-
-
-<div class="block">
-<ul>
-<li>
-添加
-</li>
-<li>
-<a href="http://www.baidu.com"> </a>
-</li>
-<li>
-<a href="http://www.baidu.com"> </a>
-</li>
-<li>
-<a href="http://www.baidu.com"> </a>
-</li>
-<li>
-<a href="http://www.baidu.com"> </a>
-</li>
-</ul>
-</div>
-
-
-<div class="block">
-<ul>
-<li>
-添加
-</li>
-<li>
-<a href="http://www.baidu.com"> </a>
-</li>
-<li>
-<a href="http://www.baidu.com"> </a>
-</li>
-<li>
-<a href="http://www.baidu.com"> </a>
-</li>
-<li>
-<a href="http://www.baidu.com"> </a>
-</li>
-</ul>
-</div>
-
-
-<div class="block">
-<ul>
-<li>
-添加
-</li>
-<li>
-<a href="http://www.baidu.com"> </a>
-</li>
-<li>
-<a href="http://www.baidu.com"> </a>
-</li>
-<li>
-<a href="http://www.baidu.com"> </a>
-</li>
-<li>
-<a href="http://www.baidu.com"> </a>
-</li>
-</ul>
-</div>
-
+            // display countdown in calendar
+            countDown({
+                "y": 2017,
+                "m": 7,
+                "d": 1
+            }, "Message when your countdown ends");
+        </script>
 
 </body>
+
 </html>
