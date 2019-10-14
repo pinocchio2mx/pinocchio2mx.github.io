@@ -4,6 +4,14 @@ body{
 h3,ul{
     align-content: center;
 }
-li{
+ul{
+    list-style: none;
+
+}
+a{
+    text-decoration: NONE;
+
+}
+a:hover {
 
 }
